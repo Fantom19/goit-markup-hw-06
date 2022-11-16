@@ -737,24 +737,3 @@ textarea{
   resize: none;
 }
 
-.form{
-  width: 528px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
-}
-
-.form-field{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.form-field label{
-  margin-bottom: 4px;
-}
-
-.form-field input{
-  margin: 0;
-  padding: 14px 14px;
-}
