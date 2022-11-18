@@ -708,6 +708,7 @@ transform: translateY(0);
 
  width: 528px;
  height: 581px;
+ padding: 40px;
 
  background:var(--white-color);
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -731,6 +732,122 @@ transform: translateY(0);
   border-radius: 50%;
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-form-group{
+  margin-bottom: 20px;
+}
+
+.modal-label{
+  display: block;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+.modal-form-label{
+  display: block;
+ 
+  font-size: 12px;
+ 
+  color: var(--paragraph-color);
+}
+
+.modal-form-wrapper{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-field{
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline-offset: -1px;
+  outline: 1px solid transparent;
+  transition: outline 250ms, box-shadow 250ms;
+}
+
+.modal-form-field:focus{
+  outline-color:var(--Text-color);
+  box-shadow: 0 0 0 1px rgba(33, 150, 243, 1);
+}
+
+.modal-form-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill 250ms;
+}
+
+.modal-form-field:focus + .modal-form-icon{
+ fill: var(--Text-color);
+}
+
+.modal-form-message{
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  
+
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline-offset: -1px;
+  outline: 1px solid transparent;
+  transition: outline 250ms, box-shadow 250ms;
+}
+
+.modal-form-message:focus{
+  outline-color: var(--Text-color);
+  box-shadow: 0 0 0 1px rgba(33, 150, 243, 1);
+}
+
+.modal-form-agreement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+
+.agreement-desc{
+  font-size: 14px;
+  height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
+
+.agreement-link{
+  color: rgba(33, 150, 243, 1);
+}
+
+.modal-form-checkbox{
+  appearance: none;
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border: 2px solid var(--dominant-text-color);
+  border-radius: 2px;
+}
+
+.modal-form-checkbox:checked{
+  outline-color: var(--Text-color);
+  background-color: var(--Text-color);
 }
 
 textarea{
