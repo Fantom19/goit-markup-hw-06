@@ -410,7 +410,11 @@
             <textarea class="modal-form-message" name="user_message" id="user_message" rows="6" placeholder="Введіть текст"></textarea>
           </div>
           <div class="modal-form-agreement" role="group">
-            <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
+            <input class="modal-form-checkbox visually-hidden" type="checkbox" id="user_agreement" />
+             <svg class="agreement-icon" width="16" height="15">
+               <use class="uncheck" href="./images/symbol-defs.svg#icon-check"></use>
+               <use class="check" href="./images/symbol-defs.svg#icon-check-blu"></use>
+             </svg>
             <label class="agreement-desc" for="user_agreement">Погоджуюся з розсилкою та приймаю 
               <a class="agreement-link" href="">Умови договору</a></label>
           </div>

@@ -834,23 +834,27 @@ transform: translateY(0);
   color: rgba(33, 150, 243, 1);
 }
 
-.modal-form-checkbox{
-  appearance: none;
-  width: 16px;
-  height: 15px;
-
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  border: 2px solid var(--dominant-text-color);
-  border-radius: 2px;
+.uncheck{
+  opacity: 1;
+  transition: 250ms;
 }
 
-.modal-form-checkbox:checked{
-  outline-color: var(--Text-color);
-  background-color: var(--Text-color);
+.modal-form-checkbox:checked+
+.agreement-icon .uncheck{
+  opacity: 0;
+}
+
+.check{
+  opacity: 0;
+  transition: 250ms;
+}
+
+.modal-form-checkbox:checked + 
+.agreement-icon .check{
+  opacity: 1;
 }
 
 textarea{
   resize: none;
-}
+} 
 
