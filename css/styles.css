@@ -845,6 +845,7 @@ transform: translateY(0);
 
 .agreement-link{
   color: rgba(33, 150, 243, 1);
+  text-underline-offset: 3px;
 }
 
 .uncheck{
